@@ -105,6 +105,20 @@ src/main/java/com/demo/
     ├── concretes/
     │   └── Book.java
     └── BookSaleSystem.java
+└── factorymethod/       # 额外示例：工厂方法模式 (已完成)
+    ├── product/
+    │   ├── Vehicle.java
+    │   └── impl/
+    │       ├── Car.java
+    │       ├── Bicycle.java
+    │       └── Airplane.java
+    ├── factory/
+    │   ├── VehicleFactory.java
+    │   └── impl/
+    │       ├── CarFactory.java
+    │       ├── BicycleFactory.java
+    │       └── AirplaneFactory.java
+    └── TransportationCompany.java
 ```
 
 ## 📚 作业详情
@@ -231,6 +245,20 @@ src/main/java/com/demo/
 
 **运行**: `com.demo.strategy.BookSaleSystem`
 
+---
+
+### 🎯 额外示例：工厂方法模式的应用
+**目的**: 对比理解工厂方法模式与简单工厂、抽象工厂模式的区别
+
+**内容**: 交通工具生产系统
+- 交通公司可以生产汽车、自行车、飞机等不同交通工具
+- 每种交通工具都有专门的工厂负责生产
+- 对比简单工厂：一个工厂对应一种产品，更符合开闭原则
+- 对比抽象工厂：一个工厂生产一种产品，而非产品家族
+- **实现**: `com.demo.factorymethod.factory.VehicleFactory`
+
+**运行**: `com.demo.factorymethod.TransportationCompany`
+
 ## 🚀 快速开始
 
 ### 环境要求
@@ -275,6 +303,9 @@ java -cp target/classes com.demo.observer.OnlineStore
 
 # 作业十：策略模式
 java -cp target/classes com.demo.strategy.BookSaleSystem
+
+# 额外示例：工厂方法模式
+java -cp target/classes com.demo.factorymethod.TransportationCompany
 ```
 
 ### 打包项目
@@ -292,6 +323,7 @@ mvn clean
 ### 创建型模式
 - **单例模式**: 确保一个类只有一个实例，并提供全局访问点
 - **简单工厂模式**: 根据参数创建不同产品实例
+- **工厂方法模式**: 定义创建对象的接口，让子类决定实例化哪个类
 - **抽象工厂模式**: 创建一系列相关对象的产品家族
 - **建造者模式**: 分步骤构建复杂对象
 
@@ -316,8 +348,9 @@ mvn clean
 ## 🎓 学习成果
 
 通过本项目，你可以：
-- 深入理解10个经典设计模式的核心思想
-- 掌握不同设计模式的适用场景
+- 深入理解11个设计模式的核心思想（10个作业+1个额外示例）
+- 掌握不同设计模式的适用场景和区别
+- 理解工厂模式三种变体：简单工厂、工厂方法、抽象工厂
 - 提升面向对象设计能力
 - 增强代码的可维护性和可扩展性
 

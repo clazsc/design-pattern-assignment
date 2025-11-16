@@ -204,7 +204,7 @@ src/main/java/com/demo/
 - 喜羊羊最多5条命，被灰太狼咬到会减少生命
 - 可吃三种苹果：红苹果(保护罩)、绿苹果(加快速度)、黄苹果(趟水跑)
 - 避免使用继承产生的6个子类，使用装饰模式动态添加功能
-- **实现**: `com.demo.decorator.decorators.GoatDecorator`
+- **实现**: `com.demo.decorator.decorators.DecoratedGoat`
 
 **运行**: `com.demo.decorator.GameSimulation`
 

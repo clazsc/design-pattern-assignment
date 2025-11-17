@@ -1,6 +1,6 @@
 # 软件设计与架构 - 设计模式作业项目
 
-本项目是"软件设计与架构"课程的设计模式作业实现，使用Java语言完成了**11个经典设计模式的实践**（10个课程要求 + 1个额外示例），展现了深入的设计模式理解和实际应用能力。
+本项目是"软件设计与架构"课程的设计模式作业实现，使用Java语言完成了**12个经典设计模式的实践**（10个课程要求 + 2个额外示例），展现了深入的设计模式理解和实际应用能力。
 
 ## 📋 项目概述
 
@@ -8,11 +8,10 @@
 - **项目类型**: 设计模式作业实现
 - **开发语言**: Java 17
 - **构建工具**: Maven
-- **完成状态**: ✅ 11个设计模式全部完成（10个作业 + 1个额外示例）
-- **代码质量**: ⭐⭐⭐⭐⭐ 优秀实现，包含完整文档和注释
 - **特色亮点**:
   - 🎯 装饰器模式双重实现（游戏场景 + 电商实战）
   - 🏭 工厂模式三兄弟完整对比（简单工厂 + 工厂方法 + 抽象工厂）
+  - 🌳 组合模式双重应用（菜单系统 + 文件目录系统）
   - 📚 详尽的业务场景和设计模式说明
 
 ## 🏗️ 项目结构
@@ -138,6 +137,17 @@ src/main/java/com/demo/
     │       ├── BicycleFactory.java
     │       └── AirplaneFactory.java
     └── TransportationCompany.java
+├── combination/            # 🎯 组合模式 (已完成)
+    ├── MenuComponent.java    # 抽象组件类
+    ├── MenuItem.java         # 叶子节点类
+    ├── Menu.java            # 容器节点类
+    ├── MenuSystem.java      # 菜单系统演示
+    ├── dirsystem/           # 文件目录系统演示
+    │   ├── FileComponent.java
+    │   ├── File.java
+    │   ├── Directory.java
+    │   └── FileSystemDemo.java
+    └── 组合模式学习文档.md   # 完整学习文档
 ```
 
 ## 📚 作业详情
@@ -331,6 +341,12 @@ java -cp target/classes com.demo.builder.CarManufacturer
 # 额外示例：工厂方法模式
 java -cp target/classes com.demo.factorymethod.TransportationCompany
 
+# 额外示例：组合模式（菜单系统）
+java -cp target/classes com.demo.combination.MenuSystem
+
+# 额外示例：组合模式（文件目录系统）
+java -cp target/classes com.demo.combination.dirsystem.FileSystemDemo
+
 # 结构型模式
 # 作业五：适配器模式
 java -cp target/classes com.demo.adapter.DrawingSystem
@@ -378,6 +394,7 @@ mvn clean
 - **适配器模式**: 将接口转换为客户端期望的接口
 - **桥接模式**: 将抽象部分与实现部分分离
 - **装饰模式**: 动态地给对象添加额外功能
+- **组合模式**: 将对象组合成树形结构以表示"部分-整体"的层次结构
 - **外观模式**: 为复杂子系统提供统一接口
 
 ### 行为型模式
@@ -397,7 +414,13 @@ mvn clean
 - **抽象工厂**: 一个工厂创建产品家族
 - **对比学习**: 深入理解三种工厂模式的区别和应用场景
 
-### 3. 📚 优质代码质量
+### 3. 🌳 组合模式双重应用
+- **菜单系统**: 系统管理中的多级菜单结构演示
+- **文件目录**: 模拟tree命令的文件系统层次结构
+- **统一接口**: 展示叶子节点和容器节点的一致处理
+- **递归操作**: 递归遍历和显示整个树形结构
+
+### 4. 📚 优质代码质量
 - **完整注释**: 每个类都有详细的JavaDoc注释
 - **设计原则**: 严格遵循SOLID设计原则
 - **业务场景**: 贴近实际的业务应用场景
@@ -437,5 +460,19 @@ mvn clean
 - 可作为设计模式学习参考
 - 代码可直接应用于实际项目
 - 文档详细便于团队学习
+
+## 📖 学习资源
+
+### 推荐学习网站
+- **[菜鸟教程 - 设计模式](https://www.runoob.com/design-pattern/design-pattern-intro.html)** - 通俗易懂的设计模式教程，包含23种经典设计模式的详细说明
+- **[Refactoring.Guru](https://refactoring.guru/design-patterns)** - 国外优秀的设计模式学习网站，提供丰富的实例和代码演示
+
+### 学习建议
+1. **理论结合实践**: 先理解设计模式的概念，再通过代码实现加深理解
+2. **对比学习**: 对比相似模式的区别，如三种工厂模式的对比
+3. **实际应用**: 思考在真实项目中如何应用这些模式
+4. **代码阅读**: 阅读开源框架中设计模式的应用
+
+---
 
 本项目仅用于学习目的，请遵守课程要求。

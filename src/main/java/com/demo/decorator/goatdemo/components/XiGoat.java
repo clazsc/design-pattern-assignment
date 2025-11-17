@@ -1,4 +1,4 @@
-package com.demo.decorator.components;
+package com.demo.decorator.goatdemo.components;
 
 /**
  * 喜羊羊类 - 具体组件实现

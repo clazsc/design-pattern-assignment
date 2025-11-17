@@ -1,4 +1,4 @@
-package com.demo.decorator.components;
+package com.demo.decorator.goatdemo.components;
 
 /**
  * 羊接口 - 装饰器模式的核心组件接口

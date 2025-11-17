@@ -1,10 +1,10 @@
-package com.demo.decorator;
+package com.demo.decorator.goatdemo;
 
-import com.demo.decorator.components.IGoat;
-import com.demo.decorator.components.XiGoat;
-import com.demo.decorator.decorators.ShieldDecorated;
-import com.demo.decorator.decorators.SpeedDecorated;
-import com.demo.decorator.decorators.WaterDecorated;
+import com.demo.decorator.goatdemo.components.IGoat;
+import com.demo.decorator.goatdemo.components.XiGoat;
+import com.demo.decorator.goatdemo.decorators.ShieldDecorated;
+import com.demo.decorator.goatdemo.decorators.SpeedDecorated;
+import com.demo.decorator.goatdemo.decorators.WaterDecorated;
 
 /**
  * 游戏模拟客户端 - 装饰器模式演示程序

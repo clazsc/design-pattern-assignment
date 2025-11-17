@@ -1,6 +1,6 @@
-package com.demo.decorator.decorators;
+package com.demo.decorator.goatdemo.decorators;
 
-import com.demo.decorator.components.IGoat;
+import com.demo.decorator.goatdemo.components.IGoat;
 
 /**
  * 加速装饰器 - 具体装饰器实现

@@ -1,6 +1,6 @@
-package com.demo.decorator.decorators;
+package com.demo.decorator.goatdemo.decorators;
 
-import com.demo.decorator.components.IGoat;
+import com.demo.decorator.goatdemo.components.IGoat;
 
 /**
  * 羊装饰器抽象类 - 装饰器模式的核心

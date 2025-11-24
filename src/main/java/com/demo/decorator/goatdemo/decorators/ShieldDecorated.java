@@ -28,6 +28,8 @@ public class ShieldDecorated extends DecoratedGoat {
      */
     @Override
     public void flee() {
+        // 注意：由于是“装饰”，所以并不是仅以新装饰后的方法覆盖原方法，而是“装饰”，原方法仍要调用！
+        // 这样才是支持“嵌套”，无限“叠加装饰”的本质原因
         System.out.print("【开启保护罩！】-> ");
         super.flee();  // 调用被装饰对象的原始方法
     }
